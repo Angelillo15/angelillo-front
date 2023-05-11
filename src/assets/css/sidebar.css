@@ -1,0 +1,96 @@
+:root {
+  --sidebar-size: 220px;
+}
+.nav-bar {
+    display: none;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: var(--sidebar-size);
+  background-color: var(--color-tertiary);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: var(--sidebar-button-color);
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar .router-link-active {
+  background-color: var(--button-color-active);
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.router-link-active) {
+  background-color: var(--sidebar-button-color-hover);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: var(--sidebar-size);
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    left: -700px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  div.content {
+    margin-left: 0;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .active-nav {
+    left: 0;
+    margin-right: var(--sidebar-size);
+    width: var(--sidebar-size);
+    height: 100vh;
+  }
+
+  .nav-bar {
+    display: flex;
+  }
+}
+
+.avatar {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.smallAvatar {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav-bar > *{
+    margin: 10px;
+}
+
+.left {
+    margin-left: auto;
+}
+
+.openMenu {
+    font-size: 50px;
+}
+
+.openMenu:hover {
+    cursor: pointer;
+}
