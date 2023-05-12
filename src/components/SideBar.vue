@@ -18,9 +18,6 @@
       Discord <i class='bx bxl-discord-alt' />
     </a>
 
-    <router-link to="/contact">
-       Contact <i class='bx bxs-contact' /> 
-    </router-link>
     <ThemeSwitcher />
   </div>
 
@@ -28,7 +25,7 @@
     <RouterLink to="/">
       <img class="smallAvatar" src="../assets/img/avatar.jpeg" alt="">
     </RouterLink>
-    
+
     <div class="left openMenu" @click="openMenu()">
       <i class='bx bx-menu'></i>
     </div>
