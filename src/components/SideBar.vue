@@ -25,7 +25,10 @@
   </div>
 
   <div class="nav-bar">
-    <img class="smallAvatar" src="../assets/img/avatar.jpeg" alt="">
+    <RouterLink to="/">
+      <img class="smallAvatar" src="../assets/img/avatar.jpeg" alt="">
+    </RouterLink>
+    
     <div class="left openMenu" @click="openMenu()">
       <i class='bx bx-menu'></i>
     </div>
