@@ -43,6 +43,19 @@ export default {
       const sidebar = document.querySelector('.sidebar');
       sidebar?.classList.toggle('active-nav');
     }
+  },
+  watch: {
+    $route() {
+      let isMobile:boolean = window.matchMedia('(max-width: 700px)').matches;
+
+      let isSidebarOpen:boolean = document.querySelector('.sidebar')?.classList.contains('active-nav') as boolean;
+
+      if (!isMobile) return;
+      if (!isSidebarOpen) return;
+
+      const sidebar = document.querySelector('.sidebar');
+      sidebar?.classList.remove('active-nav');
+    }
   }
 }
 </script>
