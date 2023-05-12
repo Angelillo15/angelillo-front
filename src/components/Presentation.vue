@@ -39,6 +39,8 @@
             <Technologies />
 
             <br />
+
+            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Angelillo15&theme=monokai&hide_border=true" alt="">
         </div>
 </template>
 
