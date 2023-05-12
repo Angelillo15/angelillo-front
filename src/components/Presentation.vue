@@ -40,7 +40,7 @@
 
             <br />
 
-            <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Angelillo15&theme=monokai&hide_border=true" alt="">
+            <img class="stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Angelillo15&theme=monokai&hide_border=true" alt="">
         </div>
 </template>
 
@@ -67,5 +67,12 @@ export default {
 
 ul {
     list-style: none;
+}
+
+.stats {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 20px;
 }
 </style>
