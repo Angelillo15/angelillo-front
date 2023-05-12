@@ -1,6 +1,11 @@
 <template>
-  <a @click="toggleTheme()" v-if="userTheme === `dark-theme`" class="pointer">Light Theme</a>
-  <a v-else @click="toggleTheme()" class="pointer">Dark Theme</a>
+  <a @click="toggleTheme()" v-if="userTheme === `dark-theme`" class="pointer">
+    Light Theme <i class='bx bx-sun' />
+  </a>
+
+  <a v-else @click="toggleTheme()" class="pointer">
+    Dark Theme <i class='bx bx-moon' />
+  </a>
 </template>
 
 <script lang="ts">
