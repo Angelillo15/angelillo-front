@@ -15,5 +15,4 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/css/pages/home.css'
 </style>
