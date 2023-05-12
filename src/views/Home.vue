@@ -1,18 +1,13 @@
 <template>
-    <div>
-        <h1>Angelillo15</h1>
-    </div>
+    <Presentation />
 </template>
 
 <script lang="ts">
-
+import Presentation from '../components/Presentation.vue';
 export default {
-    name: "Home",
+    name: 'Home',
     components: {
-
-    }
-}
+        Presentation,
+    },
+};
 </script>
-
-<style scoped>
-</style>
