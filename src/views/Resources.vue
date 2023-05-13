@@ -5,21 +5,21 @@
             name="MAStaff"
             url="https://builtbybit.com/resources/25460/"
             description="Staff Plugin for Spigot, Bukkit, Paper, Bungee and Folia"
-            image="../../public/resources/mastaff.png"
+            image="/resources/mastaff.png"
         />
 
         <Resource
             name="Ice Minecraft Theme"
             url="https://builtbybit.com/resources/26274/"
             description="A Ice theme based on Minecraft for Pterodactyl Panel"
-            image="../../public/resources/ice.png"
+            image="/resources/ice.png"
         />
 
         <Resource
             name="Minecraft Purple Theme"
             url="https://pterodactyl-resources.com/resources/resource/43/"
             description="An Purple theme based on Minecraft for Pterodactyl Panel"
-            image="../../public/resources/purple.png"
+            image="/resources/purple.png"
         />
 
     </div>
