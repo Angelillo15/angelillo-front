@@ -10,6 +10,14 @@
        Resources <i class='bx bx-list-ul' />
     </router-link>
 
+    <router-link class="router-link-active" to="" v-if="isEditor">
+       Editor <i class='bx bx-edit-alt' />
+    </router-link>
+
+    <a @click="save()" class="pointer" v-if="isEditor">
+       Save <i class='bx bx-save' />
+    </a>
+
     <a href="https://github.com/Angelillo15" target="_blank">
       GitHub <i class='bx bxl-github' />
     </a>
@@ -38,24 +46,35 @@ import ThemeSwitcher from './ThemeSwitcher.vue';
 export default {
   name: "SideBar",
   components: { ThemeSwitcher },
+  data() {
+    return {
+      isEditor: this.$route.path.includes('/zat/editor/'),
+    }
+  },
   methods: {
     openMenu() {
       const sidebar = document.querySelector('.sidebar');
       sidebar?.classList.toggle('active-nav');
+    },
+    save() {
+      this.emitter.emit('save');
     }
   },
   watch: {
     $route() {
+      this.$forceUpdate();
+      this.isEditor = this.$route.path.includes('/zat/editor/');
+
       let isMobile:boolean = window.matchMedia('(max-width: 700px)').matches;
 
       let isSidebarOpen:boolean = document.querySelector('.sidebar')?.classList.contains('active-nav') as boolean;
 
       if (!isMobile) return;
       if (!isSidebarOpen) return;
-
       const sidebar = document.querySelector('.sidebar');
       sidebar?.classList.remove('active-nav');
     }
-  }
+  },
+
 }
 </script>

@@ -9,7 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sweetalert2/theme-dark": "^5.0.15",
+    "axios": "^1.4.0",
     "boxicons": "^2.1.4",
+    "minecraft-text": "^1.2.18",
+    "mitt": "^3.0.0",
+    "notiflix": "^3.2.6",
+    "sweetalert2": "^11.7.5",
     "vue": "^3.2.47",
     "vue-router": "4",
     "vuesax3": "^4.1.1"

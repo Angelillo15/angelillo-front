@@ -10,6 +10,16 @@ const routes: RouteRecordRaw[] = [
         path: "/resources",
         name: "Resources",
         component: () => import("../views/Resources.vue")
+    },
+    {
+        path: "/zat/editor",
+        name: "ZatEditor with no id",
+        component: () => import("../views/Editor.vue")
+    },
+    {
+        path: "/zat/editor/:id",
+        name: "ZatEditor",
+        component: () => import("../views/Editor.vue")
     }
 ];
 
