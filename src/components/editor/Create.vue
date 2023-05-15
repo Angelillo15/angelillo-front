@@ -8,14 +8,17 @@
 import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'Create Tag',
+    data() {
+        return {
+            createCount: 1,
+        }
+    },
     methods: {
         create() {
-            this.emitter.emit('create', {
-                name: "New Tag",
-                permission: "pastes.tag",
-                materialIcon: "minecraft:paper",
-                displayName: "&4&lNew Tag",
-            });
+            this.emitter.emit('create', this.createCount);
+
+            this.createCount ++;
+            console.log(this.createCount)
         }
     }
 })

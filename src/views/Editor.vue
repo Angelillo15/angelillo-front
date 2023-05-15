@@ -61,9 +61,9 @@ export default defineComponent({
     mounted() {
         this.dataID = this.$route.params.id as string;
         this.getData();
-        this.emitter.on('create', () => {
+        this.emitter.on('create', (n: number) => {
             this.tagArray.push({
-                name: 'New Tag',
+                name: 'New Tag '+ n,
                 permission: 'zat.tag.new',
                 materialIcon: 'dirt',
                 displayName: '&4New Tag',
