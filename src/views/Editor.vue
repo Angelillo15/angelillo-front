@@ -101,7 +101,6 @@ export default defineComponent({
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
