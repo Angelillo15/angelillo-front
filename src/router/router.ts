@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
     {
         path: "/zat/editor",
         name: "ZatEditor with no id",
-        component: () => import("../views/Editor.vue")
+        redirect: "/zat/editor/new"
     },
     {
         path: "/zat/editor/:id",
