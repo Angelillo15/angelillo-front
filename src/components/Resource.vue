@@ -45,8 +45,7 @@ export default defineComponent({
     border-radius: 3%;
     min-height: 350px;
     max-height: 500px;
-    color: var(--sidebar-button-color);
-}
+    color: var(--sidebar-button-color);}
 
 .resource:hover {
     transition: filter 0.2s ease-in-out;
@@ -64,7 +63,7 @@ export default defineComponent({
 .resource__image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .resource__content {

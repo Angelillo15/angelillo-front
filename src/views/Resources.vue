@@ -9,6 +9,21 @@
         />
 
         <Resource
+            name="AntiAbusers"
+            url="https://builtbybit.com/resources/antiabusers.32543/"
+            description="Remove all your abusers from your server"
+            image="/resources/anti.png"
+        />
+
+        <Resource
+            name="NookTheme"
+            url="https://builtbybit.com/resources/nooktheme-pterodactyl-theme.30893/"
+            description="Is a simple and beatiful pterodactyl free theme ready to use"
+            image="/resources/nooktheme.png"
+        />
+    
+
+        <Resource
             name="Ice Minecraft Theme"
             url="https://builtbybit.com/resources/26274/"
             description="A Ice theme based on Minecraft for Pterodactyl Panel"
